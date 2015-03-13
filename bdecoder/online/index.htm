@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>btmainpage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Fireworks CS3 Dreamweaver CS3 target.  Created Tue Feb 15 00:09:41 GMT+0800 2011-->
+<link href="btmainpage.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+
+function torrentClick()
+{
+	window.location.href = window.location.href;
+}
+function torrentOver()
+{
+	document.getElementById("viewtorrent").style.backgroundImage = "url(images/btmainpage_r4_c4.png)";
+}
+function torrentOut()
+{
+	document.getElementById("viewtorrent").style.backgroundImage = "url(images/btmainpage_r4_c1.png)";
+}
+</script>
+<script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript">
+            <!-- For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. --> 
+            var swfVersionStr = "10.0.0";
+            <!-- To use express install, set to playerProductInstall.swf, otherwise the empty string. -->
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {};
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#ffffff";
+            params.allowscriptaccess = "sameDomain";
+            params.allowfullscreen = "true";
+            var attributes = {};
+            attributes.id = "BitTorrentFileViewer";
+            attributes.name = "BitTorrentFileViewer";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "BitTorrentFileViewer.swf", "flashContent", 
+                "100%", "100%", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+			<!-- JavaScript enabled so display the flashContent div in case it is not replaced with a swf object. -->
+			swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+</script>
+</head>
+<body>
+<div id="container">
+<div id="head">
+	<img id="logo" src="images/logo.png" onclick="torrentClick();" title="BT盒子"/>
+</div>
+<div id="menubar">
+	<!--<input type="button" title="hello" onclick="torrentClick();" onmouseover="torrentOver();" onmouseout="torrentOut();" id="viewtorrent"/>-->
+	<div title="种子信息查看" onclick="torrentClick();" onmouseover="torrentOver();" onmouseout="torrentOut();" id="viewtorrent"/>
+</div>
+<div id="content">
+	<!--<img id="flashselector" src="images/flashviewbtn.png" onclick="torrentClick();"/>-->
+    <div id="flashContent">
+        	<p>
+	        	请确认您浏览器的Adobe Flash Player插件版本为 
+				10.0.0及其以上.
+			</p>
+			<script type="text/javascript"> 
+				var pageHost = ((document.location.protocol == "https:") ? "https://" :	"http://"); 
+				document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" 
+								+ pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" ); 
+			</script> 
+        </div>
+</div> 
+<div id="bottom">
+	<a id="copyright" href="http://www.kingnare.com" target="_blank">© 2011 www.kingnare.com</a>
+</div>
+</div>
+</body>
+</html>

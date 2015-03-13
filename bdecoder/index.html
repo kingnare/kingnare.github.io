@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iTorrent AIR</title>
+<link href="images/StyleCss.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+	function gotoOnline()
+	{
+		window.location.href = "http://zhongzi.sinaapp.com";
+	}
+	function torrentOver()
+	{
+		document.getElementById("internet").style.backgroundImage = "url(images/internet_over.png)";
+	}
+	function torrentOut()
+	{
+		document.getElementById("internet").style.backgroundImage = "url(images/internet.png)";
+	}
+</script>
+</head>
+
+<body>
+<div id="Container">
+	<!--网站顶部-->
+	<div id="HeaDer">
+    	<div class="Logo"></div>
+      <div id="internet" class="Internet" onclick="gotoOnline();" onmouseover="torrentOver();" onmouseout="torrentOut();" ></div>
+    </div>
+    <!--大图-->
+  	<div id="BigBanner">
+    	<a href="http://get.adobe.com/air" class="a1"></a>
+        <a href="http://zhongzi.sinaapp.com/airsetup/itorrent.air" class="a2"></a>
+    </div>
+    <!--小分类图-->
+    <div class="ClassBanner"><img src="images/img1.jpg" /></div>
+    <div class="ClassLine"></div>
+    <div class="ClassBanner"><img src="images/img2.jpg" /></div>
+    <div class="ClassLine"></div>
+    <div class="ClassBanner"><img src="images/img3.jpg" /></div>
+    <div class="ClassLine"></div>
+    <div class="ClassBanner"><img src="images/img4.jpg" /></div>
+    <div class="ClassLine"></div>
+    <!--网站底部-->
+    <div id="Footer">Copyright &copy; <a href="http://www.kingnare.com/">kingnare.com</a> Support: <a href="http://www.shuiyue.cn">shuiyue.cn</a></div>
+</div>
+</body>
+</html>

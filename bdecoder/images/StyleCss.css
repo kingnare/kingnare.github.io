@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* == 网站通用样式 == */
+body{ padding:0; margin:0; font-size:12px; font-family:Arial,tahoma;color:#444;}
+a{ color:#333; text-decoration:none;}
+a:hover{ color:#a00; text-decoration:underline;}
+.clear{ clear:both; overflow:hidden;width:1px;height:0px;}
+li{list-style:none;}
+img{ border:0;}
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img, h1, h2, h3, h4, h5, h6{margin:0;padding:0;}
+
+/* == 网站布局开始 == */
+#Container{ background:repeat-x url(body_bg.png) left top; }
+	/* == 网站顶部 == */
+	#HeaDer{margin:0 auto;width:980px;height:66px;background:repeat-x url(top_bg.png) left top;}
+		#HeaDer .Logo{width:173px;height:61px;background:no-repeat url(Logo.png) left top;float:left;}
+		#HeaDer .Internet{cursor:pointer;cursor:hand;width:120px;height:62px;background:no-repeat url(internet.png) left top;float:right;}
+		
+	/* == 大图 == */
+	#BigBanner{margin:0 auto;width:980px;height:502px;background:no-repeat url(second_banner.png) left top;}
+		#BigBanner .a1{margin:424px 0 0 303px;width:185px;height:60px;float:left;}
+		#BigBanner .a2{margin:424px 0 0 5px;width:185px;height:60px;float:left;}
+	
+	/* == 小分类图 == */
+	.ClassBanner{margin:0 auto;width:980px;padding:30px 0;}
+	.ClassLine{margin:0 auto;width:983px;background:no-repeat url(line.png) center;height:10px;clear:both;}
+	
+	/* == 网站底部 == */
+	#Footer{padding:10px 0;height:40px;text-align:center;font-size:14px;font-family:"微软雅黑", Arial;font-weight:600;color:#666}
+		#Footer a{color:#999;text-decoration:underline;}
+		#Footer a:hover{color:#a00;text-decoration:underline;}

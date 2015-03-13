@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
+    <versionNumber>0.9.6</versionNumber>
+    <versionLabel>v0.9.6</versionLabel>
+    <url>http://zhongzi.sinaapp.com/airsetup/iTorrent.air</url>
+    <description>
+	   <![CDATA[* 增加分页功能
+*全局拖动 
+*托盘支持]]>
+    </description>
+</update>
